@@ -1,0 +1,134 @@
+/*
+Description: Contains the animation styling for Site Branding
+Author: I am Yusuf Emritte
+Email: m.emritte@student.curtin.edu
+Tags: Website, Branding, Colour Palette
+*/
+
+/* Nav Bar */
+
+/* .ed::after{
+    content:'';
+    width:100%;
+    height:1px;
+    background-color:rgba(204.00000303983688, 153.00000607967377, 0, 1);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.ed:hover::after{
+    transform: scaleX(1);
+}
+
+.l-o::after{
+    content:'';
+    width:100%;
+    height:1px;
+    background-color:rgba(204.00000303983688, 153.00000607967377, 0, 1);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.l-o:hover::after{
+    transform: scaleX(1);
+}
+
+.asse::after{
+    content:'';
+    width:100%;
+    height:1px;
+    background-color:rgba(204.00000303983688, 153.00000607967377, 0, 1);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.asse:hover::after{
+    transform: scaleX(1);
+} */
+
+.aca-int::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgba(204.00000303983688, 153.00000607967377, 0, 1);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.aca-int:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-bar-container {
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, .2);
+}
+
+
+/* Hover Animation on Blackboard button did not work as intended */
+/* .blackboard-button:hover {
+    animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 
+        0 0 46px rgb(207, 169, 52)
+        0 0 216px rgb(90, 71, 15);
+    }
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 95px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    z-index: 100;
+}
+
+.dropdown-menu a {
+    color: var(--clr-blackfonts);
+    background-color: var(--clr-background-white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Inter;
+    text-align: center;
+    z-index: 100;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--clr-background-white);
+}
+
+.aca-int:hover .dropdown-menu {
+    display: block;
+}
+
