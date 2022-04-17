@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Single Page Application using vanilla HTML, CSS and JavaScript">
+    <meta name="keywords" content="web technologies, web design, web skills">
+    <meta name="author" content="I am Yusuf Emritte, Third Year Student at Curtin University">
+
+    <title>Single Page Application</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://central-cdn.curtin.edu.au/wp-content/themes/mimas/dist/images/icons/favicon.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <!-- Google Material Icon --> <!-- Used in the "Move to Top" button -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="nav-bar-container">
+            <nav id="nav-bar">
+                <div class="nav-sec-left"><img
+                        src="https://central-cdn.curtin.edu.au/wp-content/themes/mimas/dist/icons/logo-curtin.svg"
+                        alt="CTC Logo" /></div>
+                <div class="nav-sec-right">
+                    <div class="menu">
+                        <!-- <div class="ed"><span class="ed1">Education</span></div>
+                        <div class="l-o"><span class="l-o1">Learning Outcomes</span></div>
+                        <div class="asse"><span class="asse1">Assessment</span></div> -->
+                        <div class="aca-int">
+                            <span class="aca-int1">Table of Contents</span>
+                            <div class="dropdown-menu">
+                                <nav>
+                                    <a href="#ack">Acknowledgement of Country</a>
+                                    <a href="#covid">Coronavirus</a>
+                                    <a href="#syllbs">Syllabus</a>
+                                    <a href="#intro">Introduction</a>
+                                    <a href="#unit-lout">Unit Learning Outcomes</a>
+                                    <a href="#learnres">Learning Resources</a>
+                                    <a href="#assess">Assessment</a>
+                                    <a href="#acaint">Academic Integrity</a>
+                                    <a href="#addinf">Additional Information</a>
+                                    <a href="#prgcal">Program Calendar</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blackboard-button">
+                        <a href="http://lms.curtin.edu.au/" class="bb1" target="_blank">Blackboard Log-In</a>
+                    </div>
+                    <div class="switch-theme">
+                        <input type="checkbox" id="input-theme-switch">
+                        <label for="input-theme-switch" class="theme-switch">
+                            <div class="theme-switch-toggle"></div>  <!-- flow content using CSS for light/dark theme-->
+                        </label>
+                        <script src="js/theme.js"></script>
+                    </div>
+                    <div class="move-to-top">   
+                        <a href="#unit-outline-ref">                            
+                                <i class="material-icons">arrow_upward</i>                           
+                        </a>                                                                               
+                    </div>                    
+                </div>
+            </nav>
+        </div>        
+
+        <div class="unit-outline">
+            <section id="unit-outline-ref">
+                <div class="sections">
+                    <div class="title">
+                        <div class=uo>
+                            <span class="uo1">Unit Outline</span>
+                            <span class="unit-name">ISYS3004 Business Web and Mobile Technologies</span>
+                            <span class="semester">Semester 1, 2022</span>
+                        </div>
+                    </div>
+                    <div class="content"></div>
+                </div>
+            </section>            
+        </div>
+
+        <div class="unit-information-title-section">
+            <div class="main-title-container">
+                <div class="ts1">
+                    <div class="ts2">
+                        <div class=ts2-1><span class="ts2-1-1">Faculty of Business and Law</span><span
+                                class="ts2-2">School of Management and Marketing</span><span class="ts2-3">Unit
+                                Information</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ts3">
+                    <div class="ic2-1">
+                        <div class=uspc><span class="uspc-1">Unit Study Package
+                                Code</span><span class="uspc-2">ISYS3004</span>
+                        </div>
+                        <div class=tps><span class="tps-1">Tuition Pattern
+                                Summary</span><span class="tps-2">Note: For any specific variations to
+                                this tuition pattern and for precise information refer to the Learning Activities
+                                section.
+                                <br>Computer Laboratory: 1 x 3 Hours Weekly
+                                <br>This unit does not have a fieldwork component.</span></div>
+                    </div>
+                    <div class=ic2-2>
+                        <div class=mos><span class="mos-1">Mode of Study</span><span class="mos-2">Internal</span>
+                        </div>
+                        <div class=pr><span class="pr-1">Pre-Requisites</span><span class="pr-2">ISYS2001 (v.0)
+                                Introduction to Business Programming or any
+                                previous version
+                                <br>AND
+                                <br>ISYS2007 (v.0) Database or any previous version</span>
+                        </div>
+                    </div>
+                    <div class="ic2-3">
+                        <div class=cv><span class="cv-1">Credit Value</span><span class="cv-2">25.0</span>
+                        </div>
+                        <div class=aif><span class="aif-1">Approved Incidental
+                                fees</span><span class="aif-2">Information about approved incidental
+                                fees can be obtained from our website.
+                                <br>Visit <a href="https://fees.curtin.edu.au/incidental_fees.cfm/"
+                                    target="_blank">fees.curtin.edu.au/incidental_fees.cfm</a>
+                                for details.</span></div>
+                    </div>
+                    <div class=ic2-4>
+                        <div class=cru><span class="cru-1">Co-requisite units</span><span class="cru-2">Nil</span>
+                        </div>
+                    </div>
+                    <div class=ic2-5>
+                        <div class=aru><span class="aru-1">Anti-requisite units</span><span class="aru-2">Nil</span>
+                        </div>
+                    </div>
+                    <div class=ic2-6>
+                        <div class=rt><span class="rt-1">Result type</span><span class="rt-2">Grade/Mark</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="contacts">
+            <div class=contacts-container>
+                <div class=cc>
+                    <div class=c1><span class="c1-1">Contacts</span><span class="c1-2">Unit
+                            Coordinator, Teaching Staff and Administrative contact.</span></div>
+                    <div class=c2>
+                        <div class=c2-1><span class="uc">Unit Coordinator</span><span class="uc-1">Title: Dr
+                                <br>Name: Michael Borck
+                                <br>Phone: +61 8 9266 3976
+                                <br>Email: Michael.Borck@curtin.edu.au
+                                <br>Location: Building: 402 - Room: 720</span></div>
+                        <div class=c2-2><span class="ts">Teaching Staff</span><span class="ts-1">Name: Veerajay Gooljar
+                                <br>Phone: 4016511
+                                <br>Email: vgooljar@curtinmauritius.ac.mu
+                                <br>Location: Building: CTI - Room: CTI</span></div>
+                    </div>
+                    <div class=c3>
+                        <div class=c3-1><span class="ts2">Teaching Staff</span><span class="ts2-1">Name: Viraj Dawarka
+                                <br>Phone: 4016511
+                                <br>Email: Viraj.Dawarka@curtin.edu.au
+                                <br>Location: Building: CTI - Room: CTI
+                            </span></div>
+                        <div class=c3-2><span class="ac">Administrative contact</span><span class="ac-1">Name: Jeannie
+                                Darmago
+                                <br>Phone: Please email
+                                <br>Email: FLB-TSUnitAdmin@curtin.edu.au
+                                <br>Location: Building: Please email - Room: Please email</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="acknowledgement-of-country">
+            <section id="ack">
+                <div class="sections">
+                    <div class="title">
+                        <div class=uo>
+
+                            <span class="details1">Acknowledgement of Country</span>
+                            <span class="details1-1">We respectfully acknowledge the Indigenous Elders, custodians,
+                                their
+                                descendants and kin of this land past and
+                                present.<a href="http://karda.curtin.edu.au" target="_blank">The Centre for Aboriginal
+                                    Studies</a>
+                                aspires to contribute to positive social change
+                                for Indigenous
+                                Australians through higher education and research.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="corona-virus">
+            <section id="covid">
+                <div class="sections">
+                    <div class="title">
+                        <div class=uo>
+                            <span class="details1">Coronavirus (COVID-19) Update</span>
+                            <span class="details1-1">Curtin University is committed to supporting all our students and
+                                staff
+                                whether they are on campus, working
+                                remotely or overseas. Your health, safety and wellbeing are our priority and the
+                                continuing
+                                COVID-19 pandemic
+                                may require changes to the unit schedule, learning activities, delivery modes and
+                                assessment
+                                to provide flexible
+                                and safe options to our community. Curtin will endeavour to keep changes and disruptions
+                                to
+                                a minimum at all
+                                times. For current advice and further information visit
+                                <a href="https://www.curtin.edu.au/novel-coronavirus/"
+                                    target="_blank">https://www.curtin.edu.au/novel-coronavirus/.</a></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="syllabus">
+            <section id="syllbs">
+                <div class="sections">
+                    <div class="title">
+                        <div class=uo>
+                            <span class="details1">Syllabus</span>
+                            <span class="details1-1">The study of Web application development; examine web technologies,
+                                alternative web development
+                                methodologies and evaluate various code libraries and tools.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="introduction">
+            <section id="intro">
+                <div class="sections">
+                    <div class="title">
+                        <div class=uo>
+                            <span class="details1">Introduction</span>
+                            <span class="details1-1">Students will develop and apply the skills necessary to design and
+                                implement business websites using appropriate
+                                technologies in this unit. This technology includes using HyperText Markup Language
+                                (HTML)
+                                to define the
+                                structure, Cascading Style Sheets (CSS) to determine the look and feel, JavaScript to
+                                provide a website's
+                                behaviour, and other supporting technologies and frameworks to provide for a rich user
+                                experience in a business
+                                context. Students will develop and apply professional skills in a web development
+                                environment to identify
+                                stakeholder requirements and select and implement appropriate technologies for
+                                responsive
+                                and accessible webbased
+                                applications.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <div class="unit-learning-outcomes">
+            <section id="unit-lout">
+                <div class=learning-section>
+                    <div class=ulo-title>
+                        <div class=u-l-o><span class="u-l-o-1">Unit Learning Outcomes</span><span class="u-l-o-2">All
+                                graduates of Curtin University achieve a set of six
+                                Graduate Capabilities
+                                during their course of study. These inform an employer that, through your studies, you
+                                have
+                                acquired
+                                discipline knowledge and a range of other skills and capabilities which employers would
+                                value in a
+                                professional setting. Each unit in your course addresses the Graduate Capabilities
+                                through a
+                                clearly
+                                identified set of learning outcomes. They form a vital part in the process referred to
+                                as
+                                assurance of
+                                learning. The learning outcomes notify you of what you are expected to know, understand
+                                or
+                                be able to do in
+                                order to be successful in this unit. Each assessment for this unit is carefully designed
+                                to
+                                test your
+                                knowledge of one or more of the unit learning outcomes. On successfully completing all
+                                of
+                                the assessments
+                                you will have achieved all of these learning outcomes. Your course has been designed so
+                                that
+                                on graduating
+                                you will have achieved all of Curtin's Graduate Capabilities through the assurance of
+                                learning processes in
+                                each unit.<br><br>On successful completion of this unit students can:</span></div>
+                    </div>
+                </div>
+                <div class=skill-section>
+                    <div class=skill-content>
+                        <div class=skill-content-1>
+                            <div class=col-1>
+                                <div class=u1-design>
+                                    <div class=u1-sections>
+                                        <div class=u1-picture>
+                                            <div class=u1-picture-1></div>
+                                        </div>
+                                        <div class=u1-content><span class="u1-content-1">1. Design,
+                                                implement, and evaluate
+                                                effective business web applications utilising
+                                                appropriate web technologies</span></div>
+                                    </div>
+                                </div>
+                                <div class=u4-select>
+                                    <div class=u4-sections>
+                                        <div class=u4-picture>
+                                            <div class=u4-picture-1></div>
+                                        </div>
+                                        <div class=u4-content><span class="u4-content-1">4. Select and
+                                                integrate technologies
+                                                to access, layout and present business data in a web application
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=col-2>
+                                <div class=u2-demonstrate>
+                                    <div class=u2-sections>
+                                        <div class=u2-picture>
+                                            <div class=u2-picture-1></div>
+                                        </div>
+                                        <div class=u2-content><span class="u2-content-1">2. Demonstrate
+                                                effective project
+                                                management and professional skills when developing business web
+                                                sites</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=u5-evaluate>
+                                    <div class=u5-sections>
+                                        <div class=u5-picture>
+                                            <div class=u5-picture-1></div>
+                                        </div>
+                                        <div class=u5-content><span class="u5-content-1">5. Evaluate
+                                                existing and emerging web
+                                                technologies, making informed recommendations that consider the benefits
+                                                and
+                                                limitations of
+                                                each</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=col-3>
+                                <div class=u3-analyse>
+                                    <div class=u3-sections>
+                                        <div class=u3-picture></div>
+                                        <div class=u3-content><span class="u3-content-1">3. Analyse and
+                                                evaluate stakeholder
+                                                requirements to inform the design of business websites
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="graduate-capabilities">
+            <div class=gc-section>
+                <div class=gco-title>
+                    <div class=gc-o><span class="gc-o-1">Curtin's Graduate Capabilities</span><span class="gc-o-2">Find
+                            out more about Curtin's Graduate Capabilities at the Curtin Learning and Teaching website:
+                            <a href="http://clt.curtin.edu.au" target="_blank">clt.curtin.edu.au</a></span></div>
+                </div>
+            </div>
+            <div class=skills-section>
+                <div class=skill-content>
+                    <div class=skill-content-1>
+                        <div class=col-1>
+                            <div class=g1-design>
+                                <div class=g1-sections>
+                                    <div class=g1-picture>
+                                        <div class=g1-picture-1></div>
+                                    </div>
+                                    <div class=g1-content><span class="g1-content-1">Apply discipline
+                                            knowledge, principles
+                                            and concepts</span></div>
+                                </div>
+                            </div>
+                            <div class=g4-select>
+                                <div class=g4-sections>
+                                    <div class=g4-picture>
+                                        <div class=g4-picture-1></div>
+                                    </div>
+                                    <div class=g4-content><span class="g4-content-1">Globally engaged and
+                                            responsive
+                                        </span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=col-2>
+                            <div class=g2-demonstrate>
+                                <div class=g2-sections>
+                                    <div class=g2-picture>
+                                        <div class=g2-picture-1></div>
+                                    </div>
+                                    <div class=g2-content><span class="g2-content-1">Innovative, creative and
+                                            entrepreneurial</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=g5-evaluate>
+                                <div class=g5-sections>
+                                    <div class=g5-picture>
+                                        <div class=g5-picture-1></div>
+                                    </div>
+                                    <div class=g5-content><span class="g5-content-1">Culturally competent to engage
+                                            respectfully with local First Peoples
+                                            and other diverse cultures</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=col-3>
+                            <div class=g3-analyse>
+                                <div class=g3-sections>
+                                    <div class=g3-picture></div>
+                                    <div class=g3-content><span class="g3-content-1">Effective communicators
+                                            with digital competency
+                                        </span></div>
+                                </div>
+                            </div>
+                            <div class=g6-analyse>
+                                <div class=g6-sections>
+                                    <div class=g6-picture></div>
+                                    <div class=g6-content><span class="g6-content-1">Industry connected and
+                                            career capable
+                                        </span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="learning-activities">
+            <div class="sections">
+                <div class="title">
+                    <div class=uo>
+                        <span class="details1">Learning Activities</span>
+                        <span class="details1-1">These learning activities in this unit include a mixture of reading,
+                            website study, watching videos, quizzes and other
+                            online activities that enable students to self-test their understanding. Some activities
+                            will be story-lined; that is
+                            must complete one activity before progressing. Students undertake other hands-on activities
+                            during weekly
+                            workshops, interspersed with short lectures. Partial model solutions to some activities will
+                            be available on
+                            Blackboard. Preparatory and workshop activities are on the Blackboard site.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="learning-resources">
+            <section id="learnres">
+                <div class=l-r-section>
+                    <div class=faq-columns>
+                        <div class=faq-left-title><span class="faq-left-title1">Learning Resources</span></div>
+                        <div class=faq-right-section>
+                            <div class=faq-right-sub><span class="faq-right-sub-1">Essential texts</span><span
+                                    class="faq-right-sub-1-1">The required textbook(s) for this unit are:<br><br>Lane,
+                                    J.,
+                                    Barker, T., Lewis, J., Moscovitz, M. 2012. Foundation website creation with HTML5,
+                                    CSS3,
+                                    and
+                                    JavaScript. Friends of, an Apress company.
+                                    <br>(ISBN/ISSN: 978-1-4302-3790-7)</span></div>
+                            <div class=faq-right-sub2><span class="faq-right-sub-1">Online resources</span><span
+                                    class="faq-right-sub-1-1">Lane, J., Barker, T., Lewis, J., Moscovitz, M. 2012.
+                                    Foundation website creation with HTML5, CSS3, and
+                                    JavaScript. Friends of, an Apress
+                                    company.<br><br>(<a
+                                        href="https://link-springer-com.dbgw.lis.curtin.edu.au/book/10.1007%2F978-1-4302-3790-7"
+                                        target="_blank">https://link-springer-com.dbgw.lis.curtin.edu.au/book/10.1007%2F978-1-4302-3790-7</a>)
+                                    <br>(ISBN/ISSN: 978-1-4302-3790-7)</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="assessment">
+            <section id="assess">
+                <div class=assessment-title-section>
+                    <div class=assessment-title-section1>
+                        <div class=assess-title><span class="assess-title1">ASSESSMENT</span><span
+                                class="assess-title2">Detailed information on assessment tasks</span><span
+                                class="assess-title3">Assessment policy exemptions: There are no exemptions to
+                                the
+                                assessment
+                                policy
+
+                                *Please refer to the Late Assessment and the Assessment Extension sections below for
+                                specific details and
+                                conditions.</span></div>
+                    </div>
+                </div>
+                <div class=all-3-assessments-sections>
+                    <div class=all-3-assessments-subsections>
+                        <div class=all-3-assessments-subsections2>
+                            <div class=assessment-1-section>
+                                <div class=assessment-1-rectangle>
+                                    <div class=assessment-1-rectangle-content><span class="assessment-1-rectangle-content1">20%</span><span
+                                            class="assessment-1-rectangle-content2">Web
+                                            Fundamentals
+
+                                            <br><br>Due Date:
+                                            <br>Week: Week 7
+                                            <br>Day: Friday 15 April,
+                                            <br>2022
+                                            <br>Time: 23:59
+
+                                            <br><br>Unit Learning Outcome(s)
+                                            <br>Assessed:
+                                            <br>1, 3, 5
+
+                                            <br><br>Late Assessment
+                                            <br>Accepted:
+                                            <br>Yes
+
+                                            <br><br>Assessment Extensions
+                                            <br>Considered:
+                                            <br>Yes
+
+
+
+                                            <br><br><br><br>This is a take-home assessment.
+                                            <br>You will evaluate several
+                                            <br>websites or web technologies.
+                                            <br>Your critique will be submitted as
+                                            <br>an HTML document incorporating
+                                            <br>CSS to provide styling.
+                                            <br>Your submission will include an
+                                            <br>embedded image and link
+                                            <br>to each site critiqued.
+                                            <br>See the assignment
+                                            <br>handout for more information
+
+
+
+
+
+                                            .</span></div>
+                                </div>
+                            </div>
+                            <div class=assessment-2-section>
+                                <div class=assessment-2-rectangle>
+                                    <div class=assessment-2-rectangle-content><span class="assessment-2-rectangle-content1">40%</span><span
+                                            class="assessment-2-rectangle-content2">Web
+                                            Applications
+
+                                            <br><br>Due Date:
+                                            <br>Week: Week 13
+                                            <br>Day: Friday 27 May,
+                                            <br>2022
+                                            <br>Time: 23:59
+
+                                            <br><br>Unit Learning Outcome(s)
+                                            <br>Assessed:
+                                            <br>2, 4
+
+                                            <br><br>Late Assessment
+                                            <br>Accepted:
+                                            <br>Yes
+
+                                            <br><br>Assessment Extensions
+                                            <br>Considered:
+                                            <br>Yes
+
+
+
+                                            <br><br><br><br>This is a take-home assessment.
+                                            <br>You will implement a
+                                            <br>simple website
+                                            <br>using the web
+                                            <br>technologies and design
+                                            <br>principles discussed throughout
+                                            <br>the semester.
+                                            <br>See the assignment handout for
+                                            <br>more information.
+
+
+
+
+
+
+
+                                        </span></div>
+                                </div>
+                            </div>
+                            <div class=assessment-3-section>
+                                <div class=assessment-3-rectangle>
+                                    <div class=assessment-3-rectangle-content><span class="assessment-3-rectangle-content1">40%</span><span
+                                            class="assessment-3-rectangle-content2">Extended Learning Portfolio
+
+                                            <br><br>Due Date:
+                                            <br>Week: Examination
+                                            <br>Period
+                                            <br>Day: TBA
+                                            <br>Time: TBA
+
+                                            <br><br>Unit Learning Outcome(s)
+                                            <br>Assessed:
+                                            <br>3, 4, 5
+
+                                            <br><br>Late Assessment
+                                            <br>Accepted:
+                                            <br>Yes
+
+                                            <br><br>Assessment Extensions
+                                            <br>Considered:
+                                            <br>Yes
+
+
+
+                                            <br><br><br><br>This assessment is a
+                                            <br>portfolio of your work during
+                                            <br>the semester plus an
+                                            <br>additional task(s). You present a
+                                            <br>reflective, coherent account
+                                            <br>of the achievements and
+                                            <br>demonstrate an
+                                            <br>understanding of the ULO
+                                            <br>evidenced by your work
+                                            <br>during the semester.
+                                            <br>You can improve on earlier work
+                                            <br>and incorporate any feedback
+                                            <br>you have received during
+                                            <br>the semester before submitting the
+                                            <br>portfolio. The
+                                            <br>portfolio is due during
+                                            <br>the examination period.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="pass-requirements">
+            <div class=l-r-section>
+                <div class=faq-columns>
+                    <div class=faq-left-title><span class="faq-left-title1">Pass requirements</span></div>
+                    <div class=faq-right-section>
+                        <div class=faq-right-sub><span class="faq-right-sub-1">To pass this unit, you must:</span><span
+                                class="faq-right-sub-1-1">Receive an overall grade of 5 or above (a mark 50% or greater
+                                of the overall marks possible); and
+                                <br>Submit all assessments.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="assessment-moderation">
+            <div class=l-r-section>
+                <div class=faq-columns>
+                    <div class=faq-left-title><span class="faq-left-title1">Assessment Moderation</span></div>
+                    <div class=faq-right-section>
+                        <div class=faq-right-sub><span class="faq-right-sub-1">Fair assessment through
+                                moderation</span><span class="faq-right-sub-1-1">Moderation describes a quality
+                                assurance process to ensure that assessments are appropriate to the learning
+                                outcomes, and that students work is evaluated consistently by assessors. Minimum
+                                standards for the moderation
+                                of assessments are described in the Assessment and Student Progression Manual, available
+                                from
+                                <a href="http://policies.curtin.edu.au/findapolicy/"
+                                    target="_blank">policies.curtin.edu.au/findapolicy/</a></span>
+                        </div>
+                        <div class=faq-right-sub2><span class="faq-right-sub-1">Pre-marking moderations</span><span
+                                class="faq-right-sub-1-1">A co-assessor is assigned to this unit to review all
+                                assessment tasks and marking criteria/rubrics and monitor and
+                                confirm the integrity of results. Assessment tasks are provided to students before the
+                                assessment task, marking
+                                criteria are provided to students, assessors are provided with marking guides/rubrics
+                                and sufficient information to
+                                ensure fair and consistent evaluation of student work.</span></div>
+                        <div class=faq-right-sub3><span class="faq-right-sub-1">Intra-marking / Post-marking
+                                moderation</span><span class="faq-right-sub-1-1">The following intra-marking /
+                                post-marking moderation practices are planned for use in this unit:
+                                <br>-Second marking of student work samples near grade boundaries
+                                <br>-Second marking of borderline student work; or a process of review and validation of
+                                decisions where
+                                students have not met the pass requirements
+                                <br>-Analysis of the variances between markers and locations
+                                <br>-Second marking of a random sample to check for consistent application of marking
+                                criteria and standards</span></div>
+                        <div class=faq-right-sub4><span class="faq-right-sub-1">Late assessment</span><span
+                                class="faq-right-sub-1-1">Where the submission of a late assessment is permitted, late
+                                penalties will be consistently applied in this unit.
+                                <br>Where a late assessment is permitted for an assessment item or the entirety of the
+                                unit (refer to the Assessment
+                                Schedule table in this Unit Outline) and the student does not have an approved
+                                assessment extension:
+                                <br><br>1. For assessment items submitted within the first 24 hours after the due
+                                date/time, students will be penalised
+                                by a deduction of 5% of the total marks allocated for the assessment task;
+                                <br>2. For each additional 24 hour period commenced an additional penalty of 10% of the
+                                total marks allocated
+                                for the assessment item will be deducted; and
+                                <br>3. Assessment items submitted more than 168 hours late (7 calendar days) will
+                                receive a mark of zero.
+                                <br><br>Where late assessment is NOT permitted for an assessment item or the entirety of
+                                the unit (refer to the
+                                Assessment Schedule table in this Unit Outline) and the student does not have an
+                                approved assessment extension:
+                                <br><br>1. All assessment items submitted after the due date/time will receive a mark of
+                                zero.</span></div>
+                        <div class=faq-right-sub5><span class="faq-right-sub-1">Assessment extension</span><span
+                                class="faq-right-sub-1-1">Where an application for an assessment extension is permitted
+                                for an assessment item(s) within this unit (refer to
+                                the Assessment Schedule table in this Unit Outline):
+                                <br><br>1. A student who is unable to complete an assessment item by/on the due
+                                date/time as a result of exceptional
+                                circumstances beyond the student’s control, may apply for an assessment extension on the
+                                Assessment
+                                Extension Application Form as prescribed by the Academic Registrar. The form is
+                                available on the Forms
+                                page at <a href="https://students.curtin.edu.au/essentials/forms-documents/forms/"
+                                    target="_blank">https://students.curtin.edu.au/essentials/forms-documents/forms/</a>
+                                and also within
+                                the student's
+                                OASIS (My Studies tab – Quick Forms) account.
+                                <br>2. The student will be expected to submit their application for an Assessment
+                                Extension with supporting
+                                documentation <a href="https://students.connect.curtin.edu.au/app/assessment_extension"
+                                    target="_blank">via the
+                                    online form.</a>
+                                <br>3. Timely submission of this information supports the assessment process. For
+                                applications that are declined,
+                                delayed submission may have significant ramifications on the possible marks awarded.
+                                <br>4. An application may be accepted up to five working days after the due date/time of
+                                the assessment item
+                                where the student is able to provide a verifiable explanation as to why they were not
+                                able to submit the
+                                application prior to the assessment due date/time
+                                <br><br>Where an application for an assessment extension is NOT permitted for an
+                                assessment item(s) within this unit
+                                (refer to the Assessment Schedule table in this Unit Outline):
+                                <br><br>1. All assessment items submitted after the due date/time will be subject to
+                                late penalties or receive a mark of
+                                zero depending on the unit permitting late assessment submissions.</span></div>
+                        <div class=faq-right-sub6><span class="faq-right-sub-1">Deferred assessments</span><span
+                                class="faq-right-sub-1-1">If your results show that you have been granted a deferred
+                                assessment you should immediately check OASIS for
+                                details.</span></div>
+                        <div class=faq-right-sub7><span class="faq-right-sub-1">Further assessment</span><span
+                                class="faq-right-sub-1-1">Further assessments, if granted by the Board of Examiners,
+                                will be held between 13/07/2022 and 22/07/2022 .
+                                Notification to students will be made after the Board of Examiners meeting via the
+                                Official Communications
+                                Channel in OASIS.
+                                <br>It is the responsibility of the student to be available to complete the requirements
+                                of a further assessment. If your
+                                results show that you have been granted a further assessment you should immediately
+                                check OASIS for details.</span></div>
+                        <div class=faq-right-sub8><span class="faq-right-sub-1">Reasonable adjustments for students with
+                                disabilities/health circumstances likely to impact on
+                                studies</span><span class="faq-right-sub8-1-1">A <a
+                                    href="https://www.curtin.edu.au/students/personal-support/disability/cap/"
+                                    target="_blank">Curtin
+                                    Access Plan</a> (CAP) is a document
+                                that outlines the type and level of support required by a student with a
+                                disability or health condition to have equitable access to their studies at Curtin.
+                                Carers for people with disability
+                                may also be eligible for support. This support can include alternative exam or test
+                                arrangements, study materials
+                                in accessible formats, access to Curtin's facilities and services or other support as
+                                discussed with an advisor from
+                                <a href="http://bit.ly/accessability-curtin" target="_blank">AccessAbility Services.</a>
+                                <br>Documentation is required from your treating Health Professional to confirm your
+                                health circumstances or carer
+                                responsibilities.
+                                <br>If you think you may be eligible for a CAP, please contact AccessAbility Services.
+                                If you already have a CAP please
+                                provide it to the Unit Coordinator in week 1 of each study period.</span></div>
+                    </div>
+                    <div class=faq-left-title2><span class="faq-left-title1">Referencing style</span></div>
+                    <div class=faq-right-section>
+                        <div class=faq-right-sub9><span class="faq-right-sub-1">The referencing style for this unit is
+                                APA 7th Ed.</span><span class="faq-right-sub-1-1">More information can be found on this
+                                style from the Library web site:
+                                <a href="https://libguides.library.curtin.edu.au/uniskills/referencing/apa7"
+                                    target="_blank">https://libguides.library.curtin.edu.au/uniskills/referencing/apa7</a>.</span>
+                        </div>
+                    </div>
+                    <div class=faq-left-title3><span class="faq-left-title1">Privacy</span></div>
+                    <div class=faq-right-section>
+                        <div class=faq-right-sub10><span class="faq-right-sub-1"></span><span
+                                class="faq-right-sub-1-1">As part of a learning or assessment activity, or class
+                                participation, your image or voice may be recorded or
+                                transmitted by equipment and systems operated by Curtin University. Transmission may be
+                                to other venues on
+                                campus or to others both in Australia and overseas.
+                                <br>Your image or voice may also be recorded by students on personal equipment for
+                                individual or group study or
+                                assessment purposes. Such recordings may not be reproduced or uploaded to a publicly
+                                accessible web
+                                environment. If you wish to make such recordings for study purposes as a courtesy you
+                                should always seek the
+                                permission of those who are impacted by the recording.
+                                <br>Recording of classes or course materials may not be exchanged or distributed for
+                                commercial purposes, for
+                                compensation, or for any other purpose other than personal study for the enrolled
+                                students in the unit. Breach of
+                                this may subject a student to disciplinary action under Statute No 10 – Student
+                                Disciplinary Statute.
+                                <br>If you wish to discuss this please talk to your Unit Coordinator.</span></div>
+                    </div>
+                    <div class=faq-left-title4><span class="faq-left-title1">Copyright</span></div>
+                    <div class=faq-right-section>
+                        <div class=faq-right-sub11><span class="faq-right-sub-1"></span><span
+                                class="faq-right-sub-1-1">The course material for this unit is provided to you for your
+                                own research and study only. It is subject to
+                                copyright. It is a copyright infringement to make this material available on third party
+                                websites without the express
+                                written consent of Curtin University.</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="academic-integrity-title">
+            <section id="acaint">
+                <div class="sections">
+                    <div class="title">
+                        <div class=uo>
+                            <span class="details1">Academic Integrity (including plagiarism and cheating)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="academic-integrity">
+            <div class=l-r-section1>
+                <div class=faq-columns>
+                    <div class=faq-left-title><span class="faq-left-title1">Academic Integrity</span></div>
+                    <div class=faq-right-section>
+                        <div class=faq-right-sub><span class="faq-right-sub-1">Curtin's <a
+                                    href="https://students.curtin.edu.au/essentials/rights/student-charter/"
+                                    target="_blank">Student
+                                    Charter</a>,
+                                <a href="https://www.curtin.edu.au/students/essentials/rights/academic-integrity/aip/"
+                                    target="_blank">Academic
+                                    Integrity Program (AIP)</a>, and core <a
+                                    href="https://about.curtin.edu.au/values-vision-strategy/curtin-values/"
+                                    target="_blank">Values</a>
+                                guide expectations regarding student
+                                behaviour and responsibilities. Information on these topics can be found on the <a
+                                    href="https://www.curtin.edu.au/students/essentials/rights/academic-integrity/"
+                                    target="_blank">Academic
+                                    Integrity Website</a>.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="academic-integrity-warning">
+            <div class=l-r-section1>
+                <div class=faq-columns>
+                    <div class=faq-left-title><span class="faq-left-title1">Academic Integrity Warnings</span></div>
+                    <div class=faq-right-section>
+                        <div class=faq-right-sub><span class="faq-right-sub-1">An <a
+                                    href="https://www.curtin.edu.au/students/essentials/rights/academic-integrity/"
+                                    target="_blank">Academic
+                                    Integrity Warning</a> may be
+                                issued to a New-to-Curtin student in limited circumstances and only where
+                                misconduct is not involved.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="academic-misconduct">
+            <div class=l-r-section1>
+                <div class=faq-columns>
+                    <div class=faq-left-title><span class="faq-left-title1">Academic <br>Misconduct</span></div>
+                    <div class=faq-right-section>
+                        <div class=faq-right-sub><span class="faq-right-sub-1">Staff members are required to report
+                                suspected misconduct. <a
+                                    href="https://www.curtin.edu.au/students/essentials/rights/academic-integrity/"
+                                    target="_blank">Academic
+                                    Misconduct</a> means conduct by a student
+                                that is dishonest or unfair in connection with any academic work. This includes all
+                                types of plagiarism, cheating,
+                                collusion, falsification or fabrication of content, and behaviours like falsifying
+                                medical certificates for extension.
+                                <a href="https://www.curtin.edu.au/students/essentials/rights/academic-integrity/contract-cheating/"
+                                    target="_blank">Contract
+                                    cheating</a>, the use of file sharing, translation services/apps, paraphrasing
+                                tools (text-spinners) and
+                                assignment help websites also may be considered academic misconduct. The longer term
+                                personal, social, and
+                                financial consequences of misconduct can be severe, so please ask for help if you are
+                                unsure.
+                                <br>If your work is the subject of an inquiry, you will be given an opportunity to
+                                respond and appropriate support will
+                                be provided. Academic work under inquiry will not be graded until the process has
+                                concluded. Penalties for
+                                misconduct may include a warning, a reduced or nil grade, a requirement to repeat the
+                                assessment, an annulled
+                                grade (ANN) or termination from the course. For more information refer to <a
+                                    href="https://policies.curtin.edu.au/legislation/statutes_rules.cfm"
+                                    target="_blank">Statute No.10
+                                    Student Discipline and
+                                    Academic Misconduct Rules.</a></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="ict-expectations">
+            <div class="sections">
+                <div class="title">
+                    <div class=uo>
+                        <span class="details1">Information and Communications Technology (ICT) Expectations</span>
+                        <span class="details1-1"><br><br><br><br>Curtin students are expected to have reliable internet
+                            access in order to connect to OASIS email and learning
+                            systems such as Blackboard and Library Services.
+                            <br>You may also require a computer or mobile device for preparing and submitting your work.
+                            <br><br>For general ICT assistance, in the first instance please contact OASIS Student
+                            Support:
+                            <a href="http://oasisapps.curtin.edu.au/help/general/support.cfm"
+                                target="_blank">oasisapps.curtin.edu.au/help/general/support.cfm</a>
+                            <br><br>For specific assistance with any of the items listed below, please contact The
+                            Learning Centre:
+                            <a href="http://life.curtin.edu.au/learning-support/learning_centre.htm"
+                                target="_blank">life.curtin.edu.au/learning-support/learning_centre.htm</a>
+                            <br><br>-Using Blackboard, the I Drive and Back-Up files
+                            <br>-Introduction to PowerPoint, Word and Excel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="additional-information">
+            <section id="addinf">
+                <div class=l-r-section>
+                    <div class=faq-columns>
+                        <div class=faq-left-title><span class="faq-left-title1">Additional <br>information</span></div>
+                        <div class=faq-right-section>
+                            <div class=faq-right-sub><span class="faq-right-sub-1">Further Assessment Student
+                                    Eligibility</span><span class="faq-right-sub-1-1">The Board of Examiners grants
+                                    further
+                                    Assessments.</span></div>
+                            <div class=add-right-sub2><span class="faq-right-sub-1">Accreditation Bodies</span><span
+                                    class="faq-right-sub-1-1">This unit develops topics from the Australian Computer
+                                    Society (ACS) ICT Profession Body of Knowledge: Systems
+                                    Acquisition. You can find more information about these topics and the ICT
+                                    Professional Body of Knowledge at:
+                                    <a href="https://www.acs.org.au/__data/assets/pdf_file/0007/7792/The-ICT-Profession-Body-of-Knowledge.pdf"
+                                        target="_blank">https://www.acs.org.au/__data/assets/pdf_file/0007/7792/The-ICT-Profession-Body-of-Knowledge.pdf</a>
+                                    <br><br>This unit supports AACSB International, Assurance of Learning through
+                                    course-embedded assessments. In
+                                    particular, it supports the broad course learning goals of discipline knowledge
+                                    (dk), critical thinking (ct), written
+                                    communication (wc), oral communication (oc), and ethical reasoning (er). More
+                                    information at:
+                                    http://www.aacsb.edu/accreditation/standards/2013-business/learning- and
+                                    teaching/standard8.aspx</span></div>
+                            <div class=add-right-sub3><span class="faq-right-sub-1">Enrolment</span><span
+                                    class="faq-right-sub-1-1">It is your responsibility to ensure that your enrolment is
+                                    correct - you can check your enrolment through the
+                                    eStudent option on OASIS, where you can also print an Enrolment Advice.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="student-rights">
+            <div class=l-r-section>
+                <div class=faq-columns>
+                    <div class=faq-left-title><span class="faq-left-title1">Student Rights and Responsibilities</span>
+                    </div>
+                    <div class=faq-right-section>
+                        <div class=faq-right-sub><span class="faq-right-sub-1">Student Rights and
+                                Responsibilities</span><span class="faq-right-sub-1-1">It is the responsibility of every
+                                student to be aware of all relevant legislation, policies and procedures relating to
+                                their rights and responsibilities as a student. These include:
+                                <br><br>- the Student Charter
+                                <br>- Values and Signature Behaviours
+                                <br>- the University's policy and statements on plagiarism and academic integrity
+                                <br>- copyright principles and responsibilities
+                                <br>- the University's policies on appropriate use of software and computer facilities
+                                <br><br>Information on all of the above is available through the University's "Student
+                                Rights and Responsibilities" website
+                                at: <a href="http://students.curtin.edu.au/"
+                                    target="_blank">students.curtin.edu.au/</a>rights.
+                                <br>Note: In Australia and other jurisdictions, students are required to complete a
+                                screening check prior to
+                                undertaking any activities that include children (e.g. surveying children at a school as
+                                part of a project). If this
+                                applies to you, start by contacting your unit coordinator for advice.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="student-equity">
+            <div class=l-r-section>
+                <div class=faq-columns>
+                    <div class=faq-left-title><span class="faq-left-title1">Student Equity</span></div>
+                    <div class=faq-right-section>
+                        <div class=faq-right-sub><span class="faq-right-sub-1">Student Equity</span><span
+                                class="faq-right-sub-1-1">There are a number of factors that might disadvantage some
+                                students from participating in their studies or
+                                assessments to the best of their ability, under standard conditions. These factors may
+                                include a disability or
+                                medical condition (e.g. mental illness, chronic illness, physical or sensory disability,
+                                learning disability), significant
+                                caring responsibilities, pregnancy, religious practices, living in a remote location,or
+                                another reason. If you believe
+                                you may be unfairly disadvantaged on these or other grounds please contact the
+                                appropriate service below. It is
+                                important to note that the staff of the University may not be able to meet your needs if
+                                they are not informed of
+                                your individual circumstances, so please get in touch with the appropriate service if
+                                you require assistance.
+                                <br>To discuss your needs in relation to:
+                                <br><br>- Disability or medical conditions, contact AccessAbility Services:
+                                <a href="https://students.curtin.edu.au/personalsupport/disability/"
+                                    target="_blank">https://students.curtin.edu.au/personalsupport/disability/</a>
+                                <br>- Elite athletes, contact Elite Athlete Coordinator:
+                                <a href="https://stadium.curtin.edu.au/sport/academy/elite-athleteprogram/"
+                                    target="_blank">https://stadium.curtin.edu.au/sport/academy/elite-athleteprogram/</a>
+                                <br>- All other grounds, contact the Student Wellbeing Advisory Service:
+                                <a href="https://students.curtin.edu.au/personalsupport/counselling-guidance/wellbeing/"
+                                    target="_blank">https://students.curtin.edu.au/personalsupport/counselling-guidance/wellbeing/</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="evaluate">
+            <div class=eval-padding>
+                <div class=eval-pic-section>
+                    <div class=eval-pic></div>
+                </div>
+                <div class=eval-right>
+                    <div class=eval-right-content><span class="eval-right-title">Recent unit changes</span><span
+                            class="eval-right-para">Students are encouraged to provide unit feedback through eVALUate,
+                            Curtin's online student feedback system. For more information about eVALUate, please refer
+                            to <a href="https://evaluate.curtin.edu.au/info/"
+                                target="_blank">evaluate.curtin.edu.au/info/</a>.
+
+                            <br><br>To view previous student feedback about this unit, search for the Unit Summary
+                            Report at
+                            <a href="https://evaluate.curtin.edu.au/student/unit_search.cfm"
+                                target="_blank">https://evaluate.curtin.edu.au/student/unit_search.cfm</a>.
+                            See <a href="https://evaluate.curtin.edu.au/info/dates.cfm"
+                                target="_blank">https://evaluate.curtin.edu.au/info/dates.cfm</a> to find out when you
+                            can eVALUate this
+                            unit.
+
+                            <br><br>Recent changes to this unit include:
+                            <br>- The assessments have been updated and streamlined to make them more manageable for
+                            students to
+                            follow and keep up to date.
+                            <br>- Delivery of unit material and tuition pattern now includes online components.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- For the "accordion section" in the program calendar, I used the video in the link below as reference -->
+        <!-- https://youtu.be/pzy_QStQaqA -->
+
+        <div class="program-calendar">
+            <section id="prgcal">
+                <div class="prog-cal-title">
+                    <div class=uo>
+                        <span class="details1">Program Calendar</span>
+                        <span class="details1-1">Click on the different menus on the right for more details <br>about
+                            the program calendar</span>
+                    </div>
+                </div>
+                <div class="prog-cal-sections">
+                    <div class="accordion-cal">
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="orientation" class="acc-input">
+                            <label for="orientation" class="acc-label">Orientation Week</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 21 Feb
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk1" class="acc-input">
+                            <label for="wk1" class="acc-label">Week 1</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 28 Feb
+                                    <br>Lecture: Layout
+                                    <br>Readings: Chapter 1 & 4
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk2" class="acc-input">
+                            <label for="wk2" class="acc-label">Week 2</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 7 Mar
+                                    <br>Lecture: Presentation
+                                    <br>Readings: Chapter 5
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk3" class="acc-input">
+                            <label for="wk3" class="acc-label">Week 3</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 14 Mar
+                                    <br>Lecture: Behaviour
+                                    <br>Readings: Chapter 6
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk4" class="acc-input">
+                            <label for="wk4" class="acc-label">Week 4</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 21 Mar
+                                    <br>Lecture: The DOM
+                                    <br>Readings: Chapter 8 & 9
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk5" class="acc-input">
+                            <label for="wk5" class="acc-label">Week 5</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 28 Mar
+                                    <br>Lecture: Data Processing
+                                    <br>Readings: Chapter 12
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk6" class="acc-input">
+                            <label for="wk6" class="acc-label">Week 6</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 4 Apr
+                                    <br>Lecture: Design
+                                    <br>Readings: Chapter 2 & 3
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk7" class="acc-input">
+                            <label for="wk7" class="acc-label">Week 7</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 11 Apr
+                                    <br>Lecture: Content Management
+                                    <br>Readings: Chapter 11 & 12
+                                    <br>Assignment Submission: Web Fundamentals
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk8" class="acc-input">
+                            <label for="wk8" class="acc-label">Week 8</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 18 Apr
+                                    <br>Tuition Free Week
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk9" class="acc-input">
+                            <label for="wk9" class="acc-label">Week 9</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 25 Apr
+                                    <br>Lecture: Plugins
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk10" class="acc-input">
+                            <label for="wk10" class="acc-label">Week 10</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 2 May
+                                    <br>Lecture: Themes:
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk11" class="acc-input">
+                            <label for="wk11" class="acc-label">Week 11</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 9 May
+                                    <br>Lecture: Mobile
+                                    <br>Readings: Chapter 7
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk12" class="acc-input">
+                            <label for="wk12" class="acc-label">Week 12</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 16 May
+                                    <br>Lecture: Accessibility
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk13" class="acc-input">
+                            <label for="wk13" class="acc-label">Week 13</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 23 May
+                                    <br>Lecture: Frameworks
+                                    <br>Assignment Submission: Web Application
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk14" class="acc-input">
+                            <label for="wk14" class="acc-label">Week 14</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 30 May
+                                    <br>Study Week
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk15" class="acc-input">
+                            <label for="wk15" class="acc-label">Week 15</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 6 Jun
+                                    <br>Examinations
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="prog-cal" id="wk16" class="acc-input">
+                            <label for="wk16" class="acc-label">Week 16</label>
+                            <div class="acc-content">
+                                <p>
+                                    Begin Date: 13 Jun
+                                    <br>Examinations
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+            <div class=footer-section>
+                <div class=contact-details-section>
+                    <div class=contact-details1><span class="contact-details2">Contact Details:
+                            <br>Author: Emritte M. Yusuf
+                            <br>Email: m.emritte@student.curtin.edu.au<br>Phone: +230 5793 7887<br>Date: 15 April
+                            2022</span></div>                    
+                </div>
+                <div class=copyright-section-1><span class="copyright-section-2">© 2022 Curtin University. All rights
+                        reserved.</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

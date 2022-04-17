@@ -1,0 +1,181 @@
+/*
+Description: Contains the animation styling for Site Branding
+Author: I am Yusuf Emritte
+Email: m.emritte@student.curtin.edu
+Tags: Website, Branding, Colour Palette
+*/
+
+/* Nav Bar */
+
+/* .ed::after{
+    content:'';
+    width:100%;
+    height:1px;
+    background-color:rgba(204.00000303983688, 153.00000607967377, 0, 1);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.ed:hover::after{
+    transform: scaleX(1);
+}
+
+.l-o::after{
+    content:'';
+    width:100%;
+    height:1px;
+    background-color:rgba(204.00000303983688, 153.00000607967377, 0, 1);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.l-o:hover::after{
+    transform: scaleX(1);
+}
+
+.asse::after{
+    content:'';
+    width:100%;
+    height:1px;
+    background-color:rgba(204.00000303983688, 153.00000607967377, 0, 1);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.asse:hover::after{
+    transform: scaleX(1);
+} */
+
+.aca-int::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgba(204.00000303983688, 153.00000607967377, 0, 1);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.aca-int:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-bar-container {
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, .2);
+}
+
+
+/* Hover Animation on Blackboard button did not work as intended */
+/* .blackboard-button:hover {
+    animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 
+        0 0 46px rgb(207, 169, 52)
+        0 0 216px rgb(90, 71, 15);
+    }
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 95px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    z-index: 100;
+}
+
+.dropdown-menu a {
+    color: var(--clr-blackfonts);
+    background-color: var(--clr-background-white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Inter;
+    text-align: center;
+    z-index: 100;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--clr-background-white);
+}
+
+.aca-int:hover .dropdown-menu {
+    display: block;
+}
+
+/* Move to top button */
+.move-to-top {
+    position: absolute;
+    left:1000px;    
+    width: 50px;
+    height: 50px;
+    top: 0%;
+    border-radius: 50%;
+    background: rgba(204.00000303983688, 153.00000607967377, 0, 1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);       
+    cursor: pointer;    
+}
+
+/* Reference: https://google.github.io/material-design-icons/#icon-font-for-the-web */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    background: rgba(255,255,255,0);
+    outline:rgba(255,255,255,0);
+    color: #ffffff; 
+    vertical-align: middle;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
