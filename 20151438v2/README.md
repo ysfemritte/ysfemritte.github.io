@@ -8,7 +8,7 @@ No. of hours worked on assignment ~ 45-50hrs
 - CSS Styles
 -  CSS Themes
 - CSS & JavaScript theme switching between light and dark mode
-- Theme (FIXED: Page width was set to 1440px instead of 100% like in version 1 of website. 
+- Theme (FIXED: Page width is set to 1440px instead of 100% like in version 1 of website. 
 had issues with background on smaller screens and some texts were unreadable on the right section of the page.)
 
 ## What's not working
