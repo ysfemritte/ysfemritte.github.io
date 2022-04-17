@@ -24,7 +24,7 @@ had issues with background on smaller screens and some texts were unreadable on 
 
 ## Changes
 
-- Removed the Top Menu Sections with a Dropdown Menu 
+- Replaced the Top Menu Sections with a Dropdown Menu 
 - Commented the whole section in the 'index.html' and 'style.css' file
 
 ## References
